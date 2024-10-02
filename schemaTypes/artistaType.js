@@ -9,5 +9,13 @@ export const artistType = defineType({
       name: 'name',
       type: 'string',
     }),
+    defineField({
+      name: 'nascimento',
+      type: 'date',
+    }),
+    defineField({
+      name: 'foto',
+      type: 'image',
+    }),
   ],
 })
