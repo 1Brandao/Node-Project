@@ -1,4 +1,6 @@
-import { artistType } from "./artistaType"
+import { personType } from "./personType"
+import { addressType } from "./addressType"
 
 
-export const schemaTypes = [artistType]
+
+export const schemaTypes = [personType, addressType, cityType, stateType]

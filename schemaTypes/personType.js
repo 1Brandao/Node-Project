@@ -1,21 +1,37 @@
 import {defineField, defineType} from 'sanity'
 
-export const artistType = defineType({
-  name: 'artist',
-  title: 'Artist',
+export const personType = defineType({
+  name: 'person',
+  title: 'Person',
   type: 'document',
   fields: [
+    defineField({
+      name: 'ID',
+      type: 'integer',
+    }),
     defineField({
       name: 'name',
       type: 'string',
     }),
     defineField({
-      name: 'nascimento',
+      name: 'birthday',
       type: 'date',
     }),
     defineField({
-      name: 'foto',
+      name: 'mail',
+      type: 'string',
+    }),
+    defineField({
+      name: 'profileImage',
       type: 'image',
+    }),
+    defineField({
+      name: 'status',
+      type: 'boolean',
+    }),
+    defineField({
+      name: 'address',
+      type: 'Address',
     }),
   ],
 })
