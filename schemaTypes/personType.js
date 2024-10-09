@@ -7,7 +7,7 @@ export const personType = defineType({
   fields: [
     defineField({
       name: 'ID',
-      type: 'integer',
+      type: 'number',
     }),
     defineField({
       name: 'name',
@@ -31,7 +31,7 @@ export const personType = defineType({
     }),
     defineField({
       name: 'address',
-      type: 'Address',
+      type: 'address',
     }),
   ],
 })

@@ -3,4 +3,4 @@ import { addressType } from "./addressType"
 
 
 
-export const schemaTypes = [personType, addressType, cityType, stateType]
+export const schemaTypes = [personType, addressType]
